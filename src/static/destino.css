@@ -16,6 +16,11 @@ body {
     color: #E0E0E0;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 h1 {
     font-family: 'Alfa Slab One', cursive;
     text-align: center;
@@ -249,6 +254,18 @@ section.consultar div img.motoboy {
     margin-right: 100px;
 }
 
+section.consultar div.colunas div.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.consultar div.colunas div.form label {
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    color: #828282;
+    letter-spacing: 2px;
+}
 
 
 
