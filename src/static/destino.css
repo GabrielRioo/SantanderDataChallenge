@@ -15,7 +15,7 @@ body {
 ::placeholder {
     color: #E0E0E0;
 }
- 
+
 h1 {
     font-family: 'Alfa Slab One', cursive;
     text-align: center;
@@ -29,9 +29,15 @@ h2 {
     letter-spacing: 5px;
     line-height: 90px;
     /* float: right; */
-    margin-right: 50px;
-    font-size: 40px;
+    /* margin-right: 50px; */
+    margin-top: 20px;
+    font-size: 50px;
     color: #333333
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #FF9F43;
 }
 
 p {
@@ -134,6 +140,14 @@ header div.container {
     justify-content: space-around;
 }
 
+header div.container h2.container-subtitulo {
+    line-height: 60px;
+    text-align: center;
+    /* margin-top: 10px; */
+    font-size: 30px;
+    color: #4F4F4F;
+}
+
 header div.container img.entregador {
     width: 330px;
     float: right;
@@ -182,8 +196,8 @@ section.consultar div.colunas {
 
 section.consultar div.colunas div.section-conteudo {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -196,27 +210,32 @@ section.consultar div.colunas div {
 section.consultar div.colunas div input {
     width: 50em;
     height: 3em;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 15px;
     border: none;
     background-color: #fafafa;
     font-size: 20px;
     text-indent: 60px;
     outline: none;
+    margin-top: 5em;
 }
 
-section.consultar div.colunas div button {
+section.consultar div.colunas div input.input {
+    width: 24em;
+    margin-top: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+section.consultar div.colunas button {
     width: 13em;
     height: 3em;
     background-color: #FF9F43;
     border: none;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+    margin-top: 100px;
 }
 
 
@@ -224,5 +243,7 @@ section.consultar div img.motoboy {
     width: 500px;
     margin-right: 100px;
 }
+
+
 
 

@@ -15,7 +15,6 @@ body {
 ::placeholder {
     color: #E0E0E0;
 }
- 
 h1 {
     font-family: 'Alfa Slab One', cursive;
     text-align: center;
@@ -99,10 +98,11 @@ header img.logo {
 }
 
 header button.perfil-usuario {
-    background-color: #333333;
-    width: 40px;
+    background-color: #FF9F43;
+    color: #ffffff;
+    width: 180px;
     height: 40px;
-    border-radius: 50px;
+    border-radius: 15px;
     border: none;
     cursor: pointer;
     float: right;
@@ -134,15 +134,21 @@ header div.container {
     justify-content: space-around;
 }
 
-header div.container img.entregador {
-    width: 330px;
-    float: right;
-    margin-right: 100px;
+header div.container h2.container-subtitulo {
+    line-height: 60px;
+    text-align: center;
+    /* margin-top: 10px; */
+    font-size: 30px;
+    color: #4F4F4F;
 }
 
-header div.container img.destino {
-    width: 500px;
+
+header div.container img.cadastro {
+    width: 400px;
+    /* margin-top: px; */
     margin-right: 100px;
+    margin-bottom: 30px;
+    z-index: 1;
 }
 
 header div.container-conteudo {
@@ -182,9 +188,29 @@ section.consultar div.colunas {
 
 section.consultar div.colunas div.section-conteudo {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+section.consultar div.colunas div.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+section.consultar div.colunas div.form label {
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    color: #828282;
+    letter-spacing: 2px;
+}
+
+section.consultar div.colunas div.section-conteudo h2 {
+    color: #FF9F43;
+    margin-top: 20px;
+    font-size: 50px;
 }
 
 section.consultar div.colunas div {
@@ -205,6 +231,7 @@ section.consultar div.colunas div input {
     font-size: 20px;
     text-indent: 60px;
     outline: none;
+    margin-top: 5px;
 }
 
 section.consultar div.colunas div button {
