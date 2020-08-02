@@ -1,1 +1,50 @@
 @charset "utf-8";
+
+@media (max-width: 1535px) {
+    h2 {
+        font-size: 30px;
+        margin-right: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1450px) {
+    section.consultar div.colunas div input {
+        width: 40em;
+    }
+    section.consultar div.colunas div button {
+        width: 8em;
+    }
+}
+
+@media (max-width: 1320px) {
+    .section-conteudo {
+        position: relative;
+        height: 22em;
+    }
+    section.consultar div.colunas {
+        height: 30em;
+    }
+    h2 {
+        position: absolute;
+        margin-right: 0;
+        top: 30px;
+        
+    }
+    .motoboy {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container-conteudo p {
+        font-size: 15px;
+    }
+
+    section.consultar div.colunas div input {
+        width: 30em;
+    }
+    section.consultar div.colunas div button {
+        width: 8em;
+    }
+}
