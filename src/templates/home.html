@@ -8,6 +8,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/responsive.css">
     <title>Data Entregas</title>
+    <script>
+        function mascaraCpf() {
+    var cpf = document.getElementById('cpf').value;
+    if (cpf.length == 2) {
+        document.getElementById('cpf').value = cpf + '.';
+    }
+    else if (cpf.length == 6) {
+        document.getElementById('cpf').value = cpf + '.';
+    }
+    else if (cpf.length == 10) {
+        document.getElementById('cpf').value = cpf + '/';
+    }
+    else if (cpf.length == 15) {
+        document.getElementById('cpf').value = cpf + '-';
+    }
+}
+    </script>
 </head>
 <body>
     
@@ -21,7 +38,7 @@
         </nav>
         <div class="conteudo">
             <div>
-                <img class="logo" src="../media/dataEntregas.png" alt="">
+                <a href="./home.html"><img class="logo" src="../media/dataEntregas.png" alt=""></a>
                 <button class="perfil-usuario"></button>
             </div>
             <section>
@@ -43,8 +60,8 @@
             </div>
 
             <div>
-                <input type="text" placeholder="Digite o CNPJ da sua empresa">
-                <button type="submit">CONSULTAR</button>
+                <input type="text" placeholder="Digite o CNPJ da sua empresa" id="cpf" value="" onkeypress="mascaraCpf()" maxlength="18">
+                <button type="submit"><a href="./destino.html"> CONSULTAR </a></button>
             </div>
         </div>
         

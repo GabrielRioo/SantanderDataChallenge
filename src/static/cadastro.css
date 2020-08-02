@@ -244,6 +244,11 @@ section.consultar div.colunas div button {
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+    
+}
+
+div.conteudo button:hover {
+    background-color: #e98222;
 }
 
 
