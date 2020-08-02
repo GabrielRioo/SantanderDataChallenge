@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f5fcb4f311.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../static/cadastro.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Roboto&display=swap"
+        rel="stylesheet">
     <title>Data Entregas</title>
+
+    <script>
+        function mascaraCel() {
+
+            var celular = document.getElementById('txtCel').value;
+            if (celular.length == 1) {
+                document.getElementById('txtCel').value = '(' + celular;
+            }
+            else if (celular.length == 3) {
+                document.getElementById('txtCel').value = celular + ')';
+            }
+            else if (celular.length == 9) {
+                document.getElementById('txtCel').value = celular + '-';
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+
     <header>
         <nav class="menu">
             <ul>
@@ -47,21 +66,23 @@
                 <input class="input" type="text" placeholder="Empresa Tal">
             </div>
             <div class="form">
-                <label for="">LOCALIDADE</label>
-                <input class="input" type="text" placeholder="Rua Marques de Valença">
+                <label for="">ENDEREÇO</label>
+                <input class="input" type="text" placeholder="Rua Marques de Valença, 104">
             </div>
             <div class="form">
                 <label for="">EMAIL DE CONTATO</label>
                 <input class="input" type="text" placeholder="EmpresaTal@mail.com">
             </div>
             <div class="form">
-                <label for="">CEP</label>
-                <input class="input" type="text" placeholder="00000-000">
+                <label for="">TELEFONE</label>
+                <input class="input" type="text" id="txtCel" onkeypress="mascaraCel()" maxlength="14" placeholder="(00) 00000-0000">
             </div>
+            <button type="submit"><a href="./home.html">CADASTRAR</a></button>
         </div>
-        
+
 
     </section>
-    
+
 </body>
+
 </html>
