@@ -7,11 +7,26 @@
 }
 
 body {
-    background-color: #FAFAFA;
+    background-color: #F4F6FA;
+
+}
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 10px;
+    color: #333333;
+}
+
+p {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
 }
 
 i {
-    color: #FAFAFA;
+    color: #F4F6FA;
     padding: 20px;
     
 }
@@ -21,7 +36,12 @@ i:hover {
     
 }
 
-nav.menu {
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,21 +49,91 @@ nav.menu {
     background-color: #FF9F43;
     width: 64px;
     height: 100vh;
+    position: fixed;
 }
 
-nav.menu li {
+header nav.menu li {
     display: flex;
     list-style: none;
     text-decoration: none;
     margin-bottom: 80px;
     margin-left: 5px;
-    /* padding: 20px; */
+    transition: background-color 1s;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
-nav.menu li:hover {
+header nav.menu li:hover {
     background-color: #FAFAFA;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     
-    /* padding: 20px 30px 20px 15px; */
 }
+
+header div.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+header img.logo {
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+header button.perfil-usuario {
+    background-color: #333333;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 45px;
+   
+}
+
+header section {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100vh;
+    width: 96vw;
+}
+
+
+header div.container {
+    background-color: #ffffff;
+    /* margin-left: 60px; */
+    width: 93.5%;
+    height: 280px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header div.container img.entregador {
+    width: 330px;
+    float: right;
+    margin-right: 100px;
+}
+
+header div.container-conteudo {
+    background-color: #FF9F43;
+    /* margin-left: 60px; */
+    width: 93.5%;
+    height: 100px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
